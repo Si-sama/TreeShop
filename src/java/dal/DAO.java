@@ -558,14 +558,12 @@ public class DAO {
     public void deleteContact(int idCO) {
         String sql = "DELETE FROM [dbo].[Contacts]\n"
                 + "      WHERE idCO = ?";
-        try {
-            PreparedStatement ps = con.prepareStatement(sql);
+        try ( PreparedStatement ps = con.prepareStatement(sql);){
+           
             ps.setInt(1, idCO);
             ps.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            System.out.println("Done");
         }
     }
 
