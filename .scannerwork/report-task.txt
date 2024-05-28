@@ -1,0 +1,6 @@
+projectKey=TreeShop
+serverUrl=http://localhost:9000
+serverVersion=10.5.1.90531
+dashboardUrl=http://localhost:9000/dashboard?id=TreeShop
+ceTaskId=f4418437-1aa0-4457-bdd5-7ec6892f6d04
+ceTaskUrl=http://localhost:9000/api/ce/task?id=f4418437-1aa0-4457-bdd5-7ec6892f6d04
